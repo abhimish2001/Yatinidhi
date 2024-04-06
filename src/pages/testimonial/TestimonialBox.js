@@ -1,6 +1,6 @@
 import React from "react";
 
-function Testimonialbox() {
+function TestimonialBox() {
   return (
     <>
       <section class="client_section layout_padding">
@@ -90,4 +90,4 @@ function Testimonialbox() {
   );
 }
 
-export default Testimonialbox;
+export default TestimonialBox;

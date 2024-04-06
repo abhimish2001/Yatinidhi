@@ -1,8 +1,8 @@
 import React from "react";
-import "./Home.css";
+import "./Navbar.css";
 import { Link } from "react-router-dom";
 
-export default function Navbar() {
+function Navbar() {
   return (
     <>
       <div class="hero_area">
@@ -176,3 +176,4 @@ export default function Navbar() {
     </>
   );
 }
+export default Navbar;

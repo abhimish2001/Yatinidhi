@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Navbar from "../navbar/Navbar";
+import Footer from "../footer/Footer";
 
 function BlogPage() {
   return (
@@ -25,7 +25,6 @@ function BlogPage() {
                     soluta provident enim harum aliquam veniam Delian veritatis,
                     voluptates perspiciatis
                   </p>
-                  <a href="">Read More</a>
                 </div>
               </div>
             </div>
@@ -42,7 +41,6 @@ function BlogPage() {
                     soluta provident enim harum aliquam veniam Delian veritatis,
                     voluptates perspiciatis
                   </p>
-                  <a href="">Read More</a>
                 </div>
               </div>
             </div>
