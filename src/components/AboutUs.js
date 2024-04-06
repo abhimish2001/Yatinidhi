@@ -22,9 +22,7 @@ function AboutUs() {
                   <p>
                     Elevate your CGD (City Gas Distribution) and hydrocarbon
                     projects with our expertise in steel pipeline installation.
-                    Our meticulous craftsmanship ensures reliable and efficient
-                    transportation of natural gas and hydrocarbons, powering
-                    sustainable energy solutions.
+                    
                   </p>
                 </div>
               </div>
