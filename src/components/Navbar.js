@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
+import { constant } from "../locals/constant";
 
 export default function Navbar() {
   return (
@@ -15,7 +16,7 @@ export default function Navbar() {
             <div class="container-fluid">
               <nav class="navbar navbar-expand-lg custom_nav-container">
                 <a class="navbar-brand" href="index.html">
-                  <span>YatiNidhi</span>
+                  <span>{constant.yatinidhi}</span>
                 </a>
                 <button
                   class="navbar-toggler"
@@ -74,7 +75,7 @@ export default function Navbar() {
                     <div class="col-md-7">
                       <div class="detail-box">
                         <h1>
-                          Building your visions <br></br>
+                          {constant.Build_your_visions}<br></br>
                           <span>Creating reality</span>
                         </h1>
                         <p>
@@ -102,7 +103,7 @@ export default function Navbar() {
                     <div class="col-md-7">
                       <div class="detail-box">
                         <h1>
-                          Building your visions <br></br>
+                        {constant.Build_your_visions}<br></br>
                           <span>Creating reality</span>
                         </h1>
                         <p>
@@ -130,7 +131,7 @@ export default function Navbar() {
                     <div class="col-md-7">
                       <div class="detail-box">
                         <h1>
-                          Building your visions <br></br>
+                        {constant.Build_your_visions}<br></br>
                           <span>Creating reality</span>
                         </h1>
                         <p>
