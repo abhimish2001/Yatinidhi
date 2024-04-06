@@ -1,8 +1,74 @@
-
 body {
   font-family: "Poppins", sans-serif;
   color: #0c0c0c;
   background-color: #ffffff;
+}
+
+.layout_padding {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.layout_padding2 {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.layout_padding2-top {
+  padding-top: 45px;
+}
+
+.layout_padding2-bottom {
+  padding-bottom: 45px;
+}
+
+.layout_padding-top {
+  padding-top: 90px;
+}
+
+.layout_padding-bottom {
+  padding-bottom: 90px;
+}
+
+.heading_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.heading_container h2 {
+  position: relative;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.heading_container h2::before {
+  content: "";
+  width: 40px;
+  height: 7px;
+  background-color: #ff5e14;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.heading_container.heading_center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.heading_container.heading_center h2::before {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /*header section*/
@@ -30,6 +96,8 @@ body {
 .hero_bg_box img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hero_bg_box::before {
@@ -40,7 +108,7 @@ body {
   width: 100%;
   height: 100%;
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.35)));
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0,0.1));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.35));
 }
 
 .sub_page .hero_area {
@@ -99,7 +167,6 @@ body {
 }
 
 .header_bottom {
-  background-color: transparent;
 }
 
 #navbarSupportedContent {
@@ -128,9 +195,7 @@ body {
 }
 
 .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  background-color: transparent;
-  color: #000000;
-  font-size: large;
+  background-color: #ff5e14;
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover:not(.active) .nav-link {
@@ -171,7 +236,7 @@ a:focus {
 .navbar-brand span {
   font-weight: bold;
   color: #ffffff;
-  font-size: 40px;
+  font-size: 24px;
 }
 
 .custom_nav-container .navbar-toggler {
@@ -232,72 +297,7 @@ a:focus {
   top: 0;
 }
 
-.layout_padding {
-  padding-top: 90px;
-  padding-bottom: 90px;
-}
-
-.layout_padding2 {
-  padding-top: 45px;
-  padding-bottom: 45px;
-}
-
-.layout_padding2-top {
-  padding-top: 45px;
-}
-
-.layout_padding2-bottom {
-  padding-bottom: 45px;
-}
-
-.layout_padding-top {
-  padding-top: 90px;
-}
-
-.layout_padding-bottom {
-  padding-bottom: 90px;
-}
-
-.heading_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.heading_container h2 {
-  position: relative;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-}
-
-.heading_container h2::before {
-  content: "";
-  width: 40px;
-  height: 7px;
-  background-color: #050505;
-  border-radius: 10px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.heading_container.heading_center {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
-.heading_container.heading_center h2::before {
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
+/*end header section*/
 /* slider section */
 .slider_section {
   -webkit-box-flex: 1;
@@ -422,10 +422,6 @@ a:focus {
 
 .slider_section ol.carousel-indicators li.active {
   background-color: #ffffff;
-}
-
-.service_section{
-  margin-top: 620px;
 }
 
 .service_section .box {
@@ -858,9 +854,3 @@ a:focus {
 
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
-.service_section hr.rounded {
-  border-top: 8px solid #bbb;
-  border-radius: 5px;
-  border-color: #ff5e14;
-  margin-top: 50px;
-}

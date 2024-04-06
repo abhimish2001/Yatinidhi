@@ -10,6 +10,7 @@ function Home() {
   return (
     <>
       <Navbar />
+
       <About />
       <Testimonialbox />
       <Blog />
