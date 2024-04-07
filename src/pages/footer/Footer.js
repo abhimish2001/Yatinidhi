@@ -1,6 +1,6 @@
 import React from "react";
-
-export default function Footer() {
+import "./Footer.css";
+function Footer() {
   return (
     <>
       <section className="info_section">
@@ -101,3 +101,5 @@ export default function Footer() {
     </>
   );
 }
+
+export default Footer;

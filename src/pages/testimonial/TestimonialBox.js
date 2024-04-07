@@ -1,11 +1,8 @@
 import React from "react";
-import "./Home.css";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-function Testimonial() {
+import "./Testimonial.css";
+function TestimonialBox() {
   return (
     <>
-      <Navbar />
       <section class="client_section layout_padding">
         <div class="container ">
           <div class="heading_container heading_center">
@@ -89,9 +86,8 @@ function Testimonial() {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 }
 
-export default Testimonial;
+export default TestimonialBox;

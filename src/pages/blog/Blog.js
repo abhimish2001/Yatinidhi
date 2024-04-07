@@ -1,6 +1,6 @@
 import React from "react";
-
-function Blog() {
+import "./Blog.css";
+export default function Blog() {
   return (
     <>
       <section class="blog_section layout_padding">
@@ -22,7 +22,6 @@ function Blog() {
                     soluta provident enim harum aliquam veniam Delian veritatis,
                     voluptates perspiciatis
                   </p>
-                  <a href="">Read More</a>
                 </div>
               </div>
             </div>
@@ -39,7 +38,6 @@ function Blog() {
                     soluta provident enim harum aliquam veniam Delian veritatis,
                     voluptates perspiciatis
                   </p>
-                  <a href="">Read More</a>
                 </div>
               </div>
             </div>
@@ -56,7 +54,6 @@ function Blog() {
                     soluta provident enim harum aliquam veniam Delian veritatis,
                     voluptates perspiciatis
                   </p>
-                  <a href="">Read More</a>
                 </div>
               </div>
             </div>
@@ -66,5 +63,3 @@ function Blog() {
     </>
   );
 }
-
-export default Blog;

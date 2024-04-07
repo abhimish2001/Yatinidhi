@@ -1,34 +1,32 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
-import Testimonial from "./components/Testimonial";
-import Home from "./components/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import AboutUs from "./components/AboutUs";
-import BlogPage from "./components/BlogPage";
-
+import reportWebVitals from "./reportWebVitals";
+import App from "./App";
+import BlogPage from "../src/pages/blog/BlogPage";
+import AboutUs from "../src/pages/about/AboutUs";
+import Testimonial from "../src/pages/testimonial/Testimonial";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
   },
   {
-    path: "aboutus",
-    element: <AboutUs />,
+    path: "/home",
+    element: <App />,
   },
   {
-    path: "blogpage",
+    path: "/blogpage",
     element: <BlogPage />,
   },
   {
-    path: "testimonial",
-    element: <Testimonial />,
+    path: "/aboutus",
+    element: <AboutUs />,
   },
   {
-    path: "home",
-    element: <Home />,
+    path: "/testimonial",
+    element: <Testimonial />,
   },
 ]);
 

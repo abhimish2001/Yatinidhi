@@ -1,11 +1,12 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Nav from "../navbar/Nav";
+import Footer from "../footer/Footer";
+import "./Blog.css";
 
 function BlogPage() {
   return (
     <>
-      <Navbar />
+      <Nav />
       <section class="blog_section layout_padding">
         <div class="container">
           <div class="heading_container">
@@ -25,7 +26,6 @@ function BlogPage() {
                     soluta provident enim harum aliquam veniam Delian veritatis,
                     voluptates perspiciatis
                   </p>
-                  <a href="">Read More</a>
                 </div>
               </div>
             </div>
@@ -42,7 +42,6 @@ function BlogPage() {
                     soluta provident enim harum aliquam veniam Delian veritatis,
                     voluptates perspiciatis
                   </p>
-                  <a href="">Read More</a>
                 </div>
               </div>
             </div>

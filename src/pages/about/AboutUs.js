@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-
+import Nav from "../navbar/Nav";
+import Footer from "../footer/Footer";
+import "./About.css";
 function AboutUs() {
   return (
     <>
-      <Navbar />
+      <Nav />
       <section className="service_section layout_padding">
         <div className="container">
           <div className="heading_container heading_center">
@@ -22,7 +22,6 @@ function AboutUs() {
                   <p>
                     Elevate your CGD (City Gas Distribution) and hydrocarbon
                     projects with our expertise in steel pipeline installation.
-                    
                   </p>
                 </div>
               </div>
