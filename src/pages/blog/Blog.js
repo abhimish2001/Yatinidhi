@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./Blog.css";
 export default function Blog() {
   return (
     <>
@@ -22,7 +22,6 @@ export default function Blog() {
                     soluta provident enim harum aliquam veniam Delian veritatis,
                     voluptates perspiciatis
                   </p>
-                  <a href="">Read More</a>
                 </div>
               </div>
             </div>
@@ -39,7 +38,6 @@ export default function Blog() {
                     soluta provident enim harum aliquam veniam Delian veritatis,
                     voluptates perspiciatis
                   </p>
-                  <a href="">Read More</a>
                 </div>
               </div>
             </div>
@@ -56,7 +54,6 @@ export default function Blog() {
                     soluta provident enim harum aliquam veniam Delian veritatis,
                     voluptates perspiciatis
                   </p>
-                  <a href="">Read More</a>
                 </div>
               </div>
             </div>

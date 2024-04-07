@@ -1,11 +1,12 @@
 import React from "react";
-import Navbar from "../navbar/Navbar";
+import Nav from "../navbar/Nav";
 import Footer from "../footer/Footer";
+import "./Blog.css";
 
 function BlogPage() {
   return (
     <>
-      <Navbar />
+      <Nav />
       <section class="blog_section layout_padding">
         <div class="container">
           <div class="heading_container">

@@ -1,0 +1,24 @@
+/* footer section*/
+.footer_section {
+    font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 20px;
+    background-color: #000f3c;
+  }
+  
+  .footer_section p {
+    color: rgba(254, 254, 255, 0.7);
+    margin: 0;
+    text-align: center;
+  }
+  
+  .footer_section a {
+    color: rgba(254, 254, 255, 0.7);
+  }
+  
+  /* end footer section*/

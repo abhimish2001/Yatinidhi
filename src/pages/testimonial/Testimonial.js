@@ -1,11 +1,12 @@
 import React from "react";
-import Navbar from "../navbar/Navbar";
+import Nav from "../navbar/Nav";
 import Footer from "../footer/Footer";
+import "./Testimonial.css";
 
 function Testimonial() {
   return (
     <>
-      <Navbar />
+      <Nav />
       <section class="client_section layout_padding">
         <div class="container ">
           <div class="heading_container heading_center">
