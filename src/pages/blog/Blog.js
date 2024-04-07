@@ -1,6 +1,6 @@
 import React from "react";
 
-function Blog() {
+export default function Blog() {
   return (
     <>
       <section class="blog_section layout_padding">
@@ -66,5 +66,3 @@ function Blog() {
     </>
   );
 }
-
-export default Blog;
