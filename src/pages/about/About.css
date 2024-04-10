@@ -38,16 +38,19 @@
       -ms-flex-pack: center;
           justify-content: center;
   color: #ffffff;
-  background-color: #000f3c;
+  background-color: transparent;
 }
 
 .service_section .box .detail-box h5 {
   font-weight: bold;
   text-transform: uppercase;
+  color: black;
+  text-decoration:underline ;
 }
 
-.service_section .box .detail-box a {
-  color: #ff5e14;
+.service_section .box .detail-box p{
+  color: grey;
+  font-weight: bold;
 }
 
 .about_section .row {
@@ -80,24 +83,8 @@
 .about_section .detail-box {
   position: relative;
 }
+ .about_section .detail-box p{
+  color: grey;
+  font-weight: bold;
+ }
 
-.about_section .detail-box p {
-  margin-top: 5px;
-}
-
-.about_section .detail-box a {
-  display: inline-block;
-  padding: 10px 35px;
-  background-color: #ff5e14;
-  color: #ffffff;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  border: 1px solid transparent;
-  text-transform: uppercase;
-}
-
-.about_section .detail-box a:hover {
-  background-color: transparent;
-  border-color: #ff5e14;
-  color: #ff5e14;
-}

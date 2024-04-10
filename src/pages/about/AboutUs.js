@@ -1,11 +1,11 @@
 import React from "react";
-import Nav from "../navbar/Nav";
 import Footer from "../footer/Footer";
 import "./About.css";
+import Navbar from "../navbar/Navbar";
 function AboutUs() {
   return (
     <>
-      <Nav />
+      <Navbar />
       <section className="service_section layout_padding">
         <div className="container">
           <div className="heading_container heading_center">
