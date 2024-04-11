@@ -1,12 +1,20 @@
-import "./Navbar.css";
-import { Link } from "react-router-dom";
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import WOW from 'wow.js';
+import 'animate.css/animate.min.css';
+import './Navbar.css';
 
 function Navbar() {
+  useEffect(() => {
+    const wow = new WOW();
+    wow.init();
+  }, []);
+
   return (
     <>
       <div className="hero_area">
         <div className="hero_bg_box">
-          <img src="images/sp.jpg" salt="" />
+          <img src="images/sp.jpg" alt="" />
         </div>
 
         <header className="header_section">
@@ -65,7 +73,7 @@ function Navbar() {
                 <div className="container">
                   <div className="row">
                     <div className="col-md-7">
-                      <div className="detail-box">
+                      <div className="detail-box wow animate__animated animate__slideInRight" data-wow-delay="0.3s">
                         <h1>
                           Yatinidhi Construction <br />
                         </h1>
@@ -86,4 +94,5 @@ function Navbar() {
     </>
   );
 }
+
 export default Navbar;
