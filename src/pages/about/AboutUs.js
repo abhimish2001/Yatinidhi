@@ -1,19 +1,25 @@
-import React from "react";
-import Nav from "../navbar/Nav";
+import React,{useEffect} from "react";
+import WOW from 'wow.js';
+import 'animate.css/animate.min.css';
 import Footer from "../footer/Footer";
 import "./About.css";
+import Navbar from "../navbar/Navbar";
 function AboutUs() {
+  useEffect(() => {
+    const wow = new WOW();
+    wow.init();
+  }, []);
   return (
     <>
-      <Nav />
+      <Navbar />
       <section className="service_section layout_padding">
         <div className="container">
           <div className="heading_container heading_center">
-            <h2>About Us</h2>
+            <h2 class=" wow animate__animated animate__fadeIn">About Us</h2>
           </div>
-          <div className="row">
-            <div className="col-lg-4">
-              <div className="box b1">
+          <div className="row  ">
+            <div className="col-lg-4 " >
+              <div className="box b1 wow animate__animated animate__slideInLeft " data-wow-delay="0.3s" >
                 <div className="img-box">
                   <img src="images/s1.jpg" alt=""></img>
                 </div>
@@ -27,7 +33,7 @@ function AboutUs() {
               </div>
             </div>
             <div className="col-lg-4">
-              <div className="box b2">
+              <div className="box b2 wow animate__animated animate__slideInUp" data-wow-delay="0.3s">
                 <div className="img-box">
                   <img src="images/s2.jpg" alt=""></img>
                 </div>
@@ -45,7 +51,7 @@ function AboutUs() {
               </div>
             </div>
             <div className="col-lg-4">
-              <div className="box b3">
+              <div className="box b3  wow animate__animated animate__slideInRight" data-wow-delay="0.3s">
                 <div className="img-box">
                   <img src="images/s3.jpg" alt=""></img>
                 </div>
@@ -66,7 +72,7 @@ function AboutUs() {
           <hr class="rounded"></hr>
           <div className="row">
             <div className="col-lg-4">
-              <div className="box b1">
+              <div className="box b1 wow animate__animated animate__slideInLeft"data-wow-delay="0.3s">
                 <div className="img-box">
                   <img src="images/s1.jpg" alt=""></img>
                 </div>
@@ -85,7 +91,7 @@ function AboutUs() {
               </div>
             </div>
             <div className="col-lg-4">
-              <div className="box b2">
+              <div className="box b2 wow animate__animated animate__slideInUp" data-wow-delay="0.3s">
                 <div className="img-box">
                   <img src="images/s2.jpg" alt=""></img>
                 </div>
@@ -104,7 +110,7 @@ function AboutUs() {
               </div>
             </div>
             <div className="col-lg-4">
-              <div className="box b3">
+              <div className="box b3 wow animate__animated animate__slideInRight"data-wow-delay="0.3s">
                 <div className="img-box">
                   <img src="images/s3.jpg" alt=""></img>
                 </div>
@@ -131,7 +137,7 @@ function AboutUs() {
           <div className="row">
             <div className="col-md-6 ">
               <div className="img_container">
-                <div className="img-box">
+                <div className="img-box wow animate__animated animate__slideInLeft" data-wow-delay="0.3s">
                   <img src="images/a1.jpg" className="about_img1" alt="" />
                   <img src="images/a2.jpg" className="about_img2" alt="" />
                 </div>
@@ -140,9 +146,9 @@ function AboutUs() {
             <div className="col-md-6 ">
               <div className="detail-box">
                 <div className="heading_container mt-0">
-                  <h2>Our Mission</h2>
+                  <h2 class=" wow animate__animated animate__fadeIn ">Our Mission</h2>
                 </div>
-                <p>
+                <p class=" wow animate__animated animate__slideInRight">
                   Our Mission is to continuously redefine quality and
                   performance, ensure seamless integration of all project
                   aspects, abide at all times by environmental safety measure
@@ -153,8 +159,8 @@ function AboutUs() {
                 </p>
 
                 <div className="heading_container mt-5">
-                  <h2>Our Vision</h2>
-                  <p>
+                  <h2  class=" wow animate__animated animate__fadeIn ">Our Vision</h2>
+                  <p class=" wow animate__animated animate__slideInRight" >
                     Our vision is to set ineffaceable benchmarks in high-quality
                     services, financial growth, operational excellence and
                     customer retention through unflinching trust. To be one of

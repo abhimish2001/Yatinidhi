@@ -38,16 +38,19 @@
       -ms-flex-pack: center;
           justify-content: center;
   color: #ffffff;
-  background-color: #000f3c;
+  background-color: transparent;
 }
 
 .service_section .box .detail-box h5 {
   font-weight: bold;
   text-transform: uppercase;
+  color: black;
+  text-decoration:underline ;
 }
 
-.service_section .box .detail-box a {
-  color: #ff5e14;
+.service_section .box .detail-box p{
+  color: grey;
+  font-weight: bold;
 }
 
 .about_section .row {
@@ -80,24 +83,71 @@
 .about_section .detail-box {
   position: relative;
 }
-
-.about_section .detail-box p {
-  margin-top: 5px;
+ .about_section .detail-box p{
+  color: grey;
+  font-weight: bold;
+ }
+ .fact {
+  position: relative;
+  width: 100%;
+  padding: 45px 0;
 }
 
-.about_section .detail-box a {
-  display: inline-block;
-  padding: 10px 35px;
-  background-color: #ff5e14;
-  color: #ffffff;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  border: 1px solid transparent;
+.fact .col-6 {
+  display: flex;
+  align-items: flex-start;
+}
+
+.fact .fact-icon {
+  position: relative;
+  margin: 7px 15px 0 15px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fact .fact-icon [class^="flaticon-"]::before {
+  margin: 0;
+  font-size: 60px;
+  line-height: 60px;
+  background-image: linear-gradient(#ffffff, #fdbe33);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fact .fact-right .fact-icon [class^="flaticon-"]::before {
+  background-image: linear-gradient(#ffffff, #030f27);
+}
+
+.fact .fact-left,
+.fact .fact-right {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.fact .fact-text h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.fact .fact-text p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
-.about_section .detail-box a:hover {
-  background-color: transparent;
-  border-color: #ff5e14;
-  color: #ff5e14;
+.fact .fact-left {
+  color: #fdbe33;
+  background: #030f27;
+}
+
+.fact .fact-right {
+  color: #030f27;
+  background: #fdbe33;
+}
+
+.fact .fact-left h2 {
+  color: #fdbe33;
 }
