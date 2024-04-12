@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Contact.css";
 import Footer from "../footer/Footer";
+import Nav from "../navbar/Nav";
 
 function ContactUs() {
   const [formData, setFormData] = useState({
@@ -33,6 +34,7 @@ function ContactUs() {
 
   return (
     <>
+    <Nav/>
       <div className="container">
         <div className="content">
           <div className="left-side">

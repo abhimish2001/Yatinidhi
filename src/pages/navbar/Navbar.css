@@ -72,6 +72,14 @@ body {
           transform: translateX(-50%);
 }
 
+.hero_area {
+  transition: transform 0.5s ease-in-out;
+}
+
+.hero_area.hide {
+  transform: translateY(-100%); /* Slide up out of view */
+}
+
 /*header section*/
 .hero_area {
   min-height: 100vh;
@@ -183,15 +191,15 @@ body {
 
 
 
-a,
-a:hover,
-a:focus {
-  text-decoration: none;
+Link,
+Link:hover,
+Link:focus {
+  text-decoration: underline;
 }
 
-a:hover,
-a:focus {
-  color: initial;
+Link:hover,
+Link:focus {
+  color: white;
 }
 
 .btn,
@@ -299,7 +307,7 @@ a:focus {
 
 .slider_section .detail-box h1 {
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 4rem;
   color: #ffffff;
   font-weight: 600;
 }
