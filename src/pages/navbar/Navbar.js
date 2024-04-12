@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import WOW from 'wow.js';
-import 'animate.css/animate.min.css';
-import './Navbar.css';
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+import WOW from "wow.js";
+import "animate.css/animate.min.css";
+import "./Navbar.css";
 
 function Navbar() {
   useEffect(() => {
@@ -73,15 +73,18 @@ function Navbar() {
                 <div className="container">
                   <div className="row">
                     <div className="col-md-7">
-                      <div className="detail-box wow animate__animated animate__slideInRight" data-wow-delay="0.3s">
+                      <div
+                        className="detail-box wow animate__animated animate__slideInRight"
+                        data-wow-delay="0.3s"
+                      >
                         <h1>
-                          Yatinidhi Construction <br />
+                          Yatinidhi <br />
                         </h1>
-                        <h2>
+                        <h3>
                           <span className="text-warning">
                             Inception Quality Integrity
                           </span>
-                        </h2>
+                        </h3>
                       </div>
                     </div>
                   </div>

@@ -2,6 +2,7 @@ import React,{useEffect} from "react";
 import WOW from 'wow.js';
 import 'animate.css/animate.min.css';
 import "./About.css";
+import Fact from "../fact/Fact";
 
 
   
@@ -16,7 +17,7 @@ function About() {
       <section className="service_section layout_padding">
         <div className="container">
           <div className="heading_container heading_center">
-            <h2 class=" wow animate__animated animate__fadeIn " >About Us</h2>
+            <h2 className=" wow animate__animated animate__fadeIn " >About Us</h2>
           </div>
           <div className="row">
             <div className="col-lg-4  ">
@@ -53,6 +54,7 @@ function About() {
               </div>
             </div>
           </div>
+     
           <hr className="rounded" />
           <div className="row">
             <div className="col-lg-4">
@@ -91,6 +93,7 @@ function About() {
           </div>
         </div>
       </section>
+      <Fact/>
 
       <section className="about_section layout_padding-bottom">
         <div className="container">
@@ -106,13 +109,13 @@ function About() {
             <div className="col-md-6">
               <div className="detail-box">
                 <div className="heading_container mt-0">
-                  <h2 class=" wow animate__animated animate__fadeIn ">Our Mission</h2>
+                  <h2 className=" wow animate__animated animate__slideInRight ">Our Mission</h2>
                 </div>
-                <p class=" wow animate__animated animate__slideInRight">{MISSION_TEXT}</p>
+                <p className=" wow animate__animated animate__slideInRight">{MISSION_TEXT}</p>
 
                 <div className="heading_container mt-5">
-                  <h2 class=" wow animate__animated animate__fadeIn ">Our Vision</h2>
-                  <p class=" wow animate__animated animate__slideInRight">{VISION_TEXT}</p>
+                  <h2 className=" wow animate__animated animate__slideInRight ">Our Vision</h2>
+                  <p className=" wow animate__animated animate__slideInRight">{VISION_TEXT}</p>
                 </div>
               </div>
             </div>
@@ -121,56 +124,7 @@ function About() {
       
         </section>
         
-        <div class="fact">
-          <div class="container-fluid">
-              <div class="row counters">
-                  <div class="col-md-6 fact-left wow animate__animated animate__slideInLeft">
-                      <div class="row">
-                          <div class="col-6">
-                              <div class="fact-icon">
-                                  <i class="flaticon-worker" style={{color: "red"}}></i>
-                              </div>
-                              <div class="fact-text">
-                                  <h2 data-toggle="counter-up">109</h2>
-                                  <p>Expert Workers</p>
-                              </div>
-                          </div>
-                          <div class="col-6">
-                              <div class="fact-icon">
-                                  <i class="flaticon-building"></i>
-                              </div>
-                              <div class="fact-text">
-                                  <h2 data-toggle="counter-up">485</h2>
-                                  <p>Happy Clients</p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-6 fact-right wow animate__animated animate__slideInRight">
-                      <div class="row">
-                          <div class="col-6">
-                              <div class="fact-icon">
-                                  <i class="flaticon-address"></i>
-                              </div>
-                              <div class="fact-text">
-                                  <h2 data-toggle="counter-up">789</h2>
-                                  <p>Completed Projects</p>
-                              </div>
-                          </div>
-                          <div class="col-6">
-                              <div class="fact-icon">
-                                  <i class="flaticon-crane"></i>
-                              </div>
-                              <div class="fact-text">
-                                  <h2 data-toggle="counter-up">890</h2>
-                                  <p>Running Projects</p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
+       
     </div>
     
   );
