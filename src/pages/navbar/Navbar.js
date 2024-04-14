@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom"; // Import NavLink instead of Link
 import WOW from "wow.js";
 import "animate.css/animate.min.css";
 import "./Navbar.css";
@@ -9,6 +9,8 @@ function Navbar() {
     const wow = new WOW();
     wow.init();
   }, []);
+
+  const [isOpen, setIsOpen] = useState(false); // State to manage the collapse
 
   return (
     <>
@@ -22,38 +24,53 @@ function Navbar() {
             <div className="container-fluid">
               <nav className="navbar navbar-expand-lg custom_nav-container">
                 <img src="/logo.png" className="navbar-brand" alt="logo" />
+
                 <button
                   className="navbar-toggler"
                   type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarSupportedContent"
+                  onClick={() => setIsOpen(!isOpen)} // Toggle collapse state
                   aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
+                  aria-expanded={isOpen ? "true" : "false"}
                   aria-label="Toggle navigation"
                 >
-                  <span className=""></span>
+                  <span className="navbar-toggler-icon"></span>
                 </button>
 
                 <div
-                  className="collapse navbar-collapse ml-auto"
+                  className={`collapse navbar-collapse ${isOpen ? "show" : ""}`} // Add 'show' class based on state
                   id="navbarSupportedContent"
                 >
-                  <ul className="navbar-nav">
+                  <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
-                      <Link to="/home" className="nav-link">
+                      <NavLink
+                        to="/home"
+                        className={({ isActive }) =>
+                          isActive ? "nav-link active" : "nav-link"
+                        }
+                      >
                         Home
-                      </Link>
+                      </NavLink>
                     </li>
                     <li className="nav-item">
-                      <Link to="/aboutus" className="nav-link">
+                      <NavLink
+                        to="/aboutus"
+                        className={({ isActive }) =>
+                          isActive ? "nav-link active" : "nav-link"
+                        }
+                      >
                         About Us
-                      </Link>
+                      </NavLink>
                     </li>
 
                     <li className="nav-item">
-                      <Link to="/contactus" className="nav-link">
+                      <NavLink
+                        to="/contactus"
+                        className={({ isActive }) =>
+                          isActive ? "nav-link active" : "nav-link"
+                        }
+                      >
                         Contact Us
-                      </Link>
+                      </NavLink>
                     </li>
                   </ul>
                 </div>
@@ -75,13 +92,16 @@ function Navbar() {
                     <div className="col-md-7">
                       <div
                         className="detail-box wow animate__animated animate__slideInRight"
-                        data-wow-delay="0.3s"
+                        data-wow-delay="1s"
                       >
                         <h1>
                           Yatinidhi <br />
                         </h1>
                         <h3>
-                          <span className="text-warning">
+                          <span
+                            className="text-warning wow animate__animated animate__slideInRight"
+                            data-wow-delay="1s"
+                          >
                             Inception Quality Integrity
                           </span>
                         </h3>

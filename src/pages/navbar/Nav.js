@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import WOW from "wow.js";
 import "animate.css/animate.min.css";
 import "./Nav.css";
@@ -9,6 +9,8 @@ function Nav() {
     const wow = new WOW();
     wow.init();
   }, []);
+
+  const [isOpen, setIsOpen] = useState(false); // State to manage the collapse
 
   return (
     <>
@@ -20,35 +22,49 @@ function Nav() {
               <button
                 className="navbar-toggler"
                 type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
+                onClick={() => setIsOpen(!isOpen)} // Toggle collapse state
                 aria-controls="navbarSupportedContent"
-                aria-expanded="false"
+                aria-expanded={isOpen ? "true" : "false"}
                 aria-label="Toggle navigation"
               >
-                <span className=""></span>
+                <span className="navbar-toggler-icon"></span>
               </button>
 
               <div
-                className="collapse navbar-collapse ml-auto"
+                className={`collapse navbar-collapse ${isOpen ? "show" : ""}`} // Add 'show' class based on state
                 id="navbarSupportedContent"
               >
                 <ul className="navbar-nav">
                   <li className="nav-item">
-                    <Link to="/home" className="nav-link">
+                    <NavLink
+                      to="/home"
+                      className={({ isActive }) =>
+                        isActive ? "nav-link active" : "nav-link"
+                      }
+                    >
                       Home
-                    </Link>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
-                    <Link to="/aboutus" className="nav-link">
+                    <NavLink
+                      to="/aboutus"
+                      className={({ isActive }) =>
+                        isActive ? "nav-link active" : "nav-link"
+                      }
+                    >
                       About Us
-                    </Link>
+                    </NavLink>
                   </li>
 
                   <li className="nav-item">
-                    <Link to="/contactus" className="nav-link">
+                    <NavLink
+                      to="/contactus"
+                      className={({ isActive }) =>
+                        isActive ? "nav-link active" : "nav-link"
+                      }
+                    >
                       Contact Us
-                    </Link>
+                    </NavLink>
                   </li>
                 </ul>
               </div>
