@@ -1,9 +1,53 @@
 .headerSection {
-background-color: #3c8bc0;
+background-color: #266fb1;
 }
 
 .navbarBrand {
   width: 120px;
   height: 80px;
  
+}
+.custom_nav-container .navbar-nav .nav-item .nav-link {
+  padding: 35px 15px 10px 15px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  font-weight: 500;
+  position: relative; /* Position relative to allow absolute positioning of pseudo-elements */
+}
+
+.custom_nav-container .navbar-nav .nav-item .nav-link:hover,
+.custom_nav-container .navbar-nav .nav-item .nav-link.active {
+  text-decoration: none; /* Remove default underline from links */
+  color: #ffffff; /* Adjust color if needed */
+}
+
+.custom_nav-container .navbar-nav .nav-item .nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 70%; /* Width of the underline */
+  height: 2px; /* Thickness of the underline */
+  background-color: #ffffff; /* Color of the underline */
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out;
+}
+
+.custom_nav-container .navbar-nav .nav-item .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%; /* Start with no underline */
+  height: 2px; /* Thickness of the underline, consistent with the active state */
+  background-color: #ffffff; /* Ensure the underline is the same color */
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out;
+}
+
+.custom_nav-container .navbar-nav .nav-item .nav-link:hover::after {
+  width: 70%; /* Width of the underline on hover */
 }

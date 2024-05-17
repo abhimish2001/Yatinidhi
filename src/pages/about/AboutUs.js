@@ -1,15 +1,11 @@
-import React,{useEffect} from "react";
-import WOW from 'wow.js';
-import 'animate.css/animate.min.css';
+import React, { useEffect } from "react";
+import WOW from "wow.js";
+import "animate.css/animate.min.css";
 import "./About.css";
 import Fact from "../fact/Fact";
 
 import Nav from "../navbar/Nav";
 import Footer from "../footer/Footer";
-
-
-
-  
 
 function AboutUs() {
   useEffect(() => {
@@ -18,15 +14,20 @@ function AboutUs() {
   }, []);
   return (
     <div>
-      <Nav/>
+      <Nav />
       <section className="service_section layout_padding">
         <div className="container">
           <div className="heading_container heading_center">
-            <h2 className=" wow animate__animated animate__fadeIn " >About Us</h2>
+            <h2 className=" wow animate__animated animate__fadeIn ">
+              About Us
+            </h2>
           </div>
           <div className="row">
             <div className="col-lg-4  ">
-              <div className="box b1 wow animate__animated animate__slideInLeft " data-wow-delay="0.3s">
+              <div
+                className="box b1 wow animate__animated animate__slideInLeft "
+                data-wow-delay="0.3s"
+              >
                 <div className="img-box">
                   <img src="images\steelpipelining.jpg" alt="" />
                 </div>
@@ -37,7 +38,10 @@ function AboutUs() {
               </div>
             </div>
             <div className="col-lg-4">
-              <div className="box b2 wow animate__animated animate__slideInUp" data-wow-delay="0.3s">
+              <div
+                className="box b2 wow animate__animated animate__slideInUp"
+                data-wow-delay="0.3s"
+              >
                 <div className="img-box">
                   <img src="images\hydrotesting.jpg" alt="" />
                 </div>
@@ -48,7 +52,10 @@ function AboutUs() {
               </div>
             </div>
             <div className="col-lg-4">
-              <div className="box b3  wow animate__animated animate__slideInRight" data-wow-delay="0.3s">
+              <div
+                className="box b3  wow animate__animated animate__slideInRight"
+                data-wow-delay="0.3s"
+              >
                 <div className="img-box">
                   <img src="images\hdpe img.jpeg" alt=""  width="516" height="250" />
                 </div>
@@ -59,11 +66,14 @@ function AboutUs() {
               </div>
             </div>
           </div>
-     
+
           <hr className="rounded" />
           <div className="row">
             <div className="col-lg-4">
-              <div className="box b1  wow animate__animated animate__slideInLeft"data-wow-delay="0.3s">
+              <div
+                className="box b1  wow animate__animated animate__slideInLeft"
+                data-wow-delay="0.3s"
+              >
                 <div className="img-box">
                   <img src="images\highwayconstruction.jpg" alt="" />
                 </div>
@@ -74,7 +84,10 @@ function AboutUs() {
               </div>
             </div>
             <div className="col-lg-4">
-              <div className="box b2 wow animate__animated animate__slideInUp" data-wow-delay="0.3s">
+              <div
+                className="box b2 wow animate__animated animate__slideInUp"
+                data-wow-delay="0.3s"
+              >
                 <div className="img-box">
                   <img src="images\metroproject.jpg" alt="" />
                 </div>
@@ -85,7 +98,10 @@ function AboutUs() {
               </div>
             </div>
             <div className="col-lg-4">
-              <div className="box b3 wow animate__animated animate__slideInRight"data-wow-delay="0.3s">
+              <div
+                className="box b3 wow animate__animated animate__slideInRight"
+                data-wow-delay="0.3s"
+              >
                 <div className="img-box">
                   <img src="images\water pro.jpg" alt="" />
                 </div>
@@ -98,15 +114,16 @@ function AboutUs() {
           </div>
         </div>
       </section>
-      <Fact/>
-     
 
       <section className="about_section layout_padding-bottom">
         <div className="container">
           <div className="row">
             <div className="col-md-6">
               <div className="img_container">
-                <div className="img-box wow animate__animated animate__slideInLeft" data-wow-delay="0.3s">
+                <div
+                  className="img-box wow animate__animated animate__slideInLeft"
+                  data-wow-delay="0.3s"
+                >
                   <img src="images/a1.jpg" className="about_img1" alt="" />
                   <img src="images/a2.jpg" className="about_img2" alt="" />
                 </div>
@@ -115,25 +132,30 @@ function AboutUs() {
             <div className="col-md-6">
               <div className="detail-box">
                 <div className="heading_container mt-0">
-                  <h2 className=" wow animate__animated animate__slideInRight" >Our Mission</h2>
+                  <h2 className=" wow animate__animated animate__slideInRight">
+                    Our Mission
+                  </h2>
                 </div>
-                <p className=" wow animate__animated animate__slideInRight">{MISSION_TEXT}</p>
+                <p className=" wow animate__animated animate__slideInRight">
+                  {MISSION_TEXT}
+                </p>
 
                 <div className="heading_container mt-5">
-                  <h2 className=" wow animate__animated animate__slideInRight ">Our Vision</h2>
-                  <p className=" wow animate__animated animate__slideInRight">{VISION_TEXT}</p>
+                  <h2 className=" wow animate__animated animate__slideInRight ">
+                    Our Vision
+                  </h2>
+                  <p className=" wow animate__animated animate__slideInRight">
+                    {VISION_TEXT}
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      
-        </section>
-        
-        <Footer/>
- 
+      </section>
+
+      <Footer />
     </div>
-    
   );
 }
 
@@ -158,4 +180,3 @@ const MISSION_TEXT =
   "Our Mission is to continuously redefine quality and performance, ensure seamless integration of all project aspects, abide at all times by environmental safety measure and create customer and employee trust & satisfaction in order to scale new heights and drive growth. We aim to expand our activities around the globe as we step up firmly in the international arena.";
 const VISION_TEXT =
   "Our vision is to set ineffaceable benchmarks in high-quality services, financial growth, operational excellence and customer retention through unflinching trust. To be one of the most trusted and respected companies in world making major contribution in Indian economic growth and emerge as the largest equal opportunity employer. Yatinidhi Constructions is dedicated towards implementation of highest level of quality, safety and environmental protection standards which would infuse and stimulate social responsibility and ensure a better life for all associated with us.";
-  
