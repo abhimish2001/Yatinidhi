@@ -3,6 +3,7 @@ import WOW from 'wow.js';
 import 'animate.css/animate.min.css';
 import "./About.css";
 import Fact from "../fact/Fact";
+
 import Nav from "../navbar/Nav";
 import Footer from "../footer/Footer";
 
@@ -27,7 +28,7 @@ function AboutUs() {
             <div className="col-lg-4  ">
               <div className="box b1 wow animate__animated animate__slideInLeft " data-wow-delay="0.3s">
                 <div className="img-box">
-                  <img src="images/s1.jpg" alt="" />
+                  <img src="images\steelpipelining.jpg" alt="" />
                 </div>
                 <div className="detail-box">
                   <h5>STEEL PIPELINE (CGD & HYDROCARBON PROJECTS)</h5>
@@ -38,7 +39,7 @@ function AboutUs() {
             <div className="col-lg-4">
               <div className="box b2 wow animate__animated animate__slideInUp" data-wow-delay="0.3s">
                 <div className="img-box">
-                  <img src="images/s2.jpg" alt="" />
+                  <img src="images\hydrotesting.jpg" alt="" />
                 </div>
                 <div className="detail-box">
                   <h5>TESTING AND COMMISSIONING (HYDRO & PNEUMATIC TESTING)</h5>
@@ -49,7 +50,7 @@ function AboutUs() {
             <div className="col-lg-4">
               <div className="box b3  wow animate__animated animate__slideInRight" data-wow-delay="0.3s">
                 <div className="img-box">
-                  <img src="images/s3.jpg" alt="" />
+                  <img src="images\hdpe img.jpeg" alt=""  width="516" height="250" />
                 </div>
                 <div className="detail-box">
                   <h5>MDPE, HDPE & LMC (CGD & WATER PROJECTS)</h5>
@@ -64,7 +65,7 @@ function AboutUs() {
             <div className="col-lg-4">
               <div className="box b1  wow animate__animated animate__slideInLeft"data-wow-delay="0.3s">
                 <div className="img-box">
-                  <img src="images/s1.jpg" alt="" />
+                  <img src="images\highwayconstruction.jpg" alt="" />
                 </div>
                 <div className="detail-box">
                   <h5>HIGHWAY PROJECTS</h5>
@@ -75,7 +76,7 @@ function AboutUs() {
             <div className="col-lg-4">
               <div className="box b2 wow animate__animated animate__slideInUp" data-wow-delay="0.3s">
                 <div className="img-box">
-                  <img src="images/s2.jpg" alt="" />
+                  <img src="images\metroproject.jpg" alt="" />
                 </div>
                 <div className="detail-box">
                   <h5>METRO PROJECTS</h5>
@@ -86,7 +87,7 @@ function AboutUs() {
             <div className="col-lg-4">
               <div className="box b3 wow animate__animated animate__slideInRight"data-wow-delay="0.3s">
                 <div className="img-box">
-                  <img src="images/s3.jpg" alt="" />
+                  <img src="images\water pro.jpg" alt="" />
                 </div>
                 <div className="detail-box">
                   <h5>WATER PROJECTS</h5>
@@ -98,6 +99,7 @@ function AboutUs() {
         </div>
       </section>
       <Fact/>
+     
 
       <section className="about_section layout_padding-bottom">
         <div className="container">
